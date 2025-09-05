@@ -13,12 +13,12 @@ public class Example {
 public void launchUrl() {
 	System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 	ChromeOptions options= new ChromeOptions();
-	options.addArguments("--headless");
-	options.addArguments("--no-sandbox");
-	options.addArguments("--disable-dev-shm-usage");
-	options.addArguments("--disable-gpu");
-	options.addArguments("--remote-allow-origins=*");
-	options.addArguments("remote-debugging-port=9222");
+	//options.addArguments("--headless");
+	//options.addArguments("--no-sandbox");
+	//options.addArguments("--disable-dev-shm-usage");
+	//options.addArguments("--disable-gpu");
+	//options.addArguments("--remote-allow-origins=*");
+	//options.addArguments("remote-debugging-port=9222");
 	WebDriver driver=new ChromeDriver(options);
 	driver.get("https://google.com/");
 	driver.quit();
